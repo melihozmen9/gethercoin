@@ -15,6 +15,7 @@
 		21817AC0287F52D7001DB139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21817ABE287F52D7001DB139 /* LaunchScreen.storyboard */; };
 		21817ACB287F52D7001DB139 /* gethercoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21817ACA287F52D7001DB139 /* gethercoinTests.swift */; };
 		21817AD6287F52D8001DB139 /* gethercoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21817AD5287F52D8001DB139 /* gethercoinUITests.swift */; };
+		21817AE4287F566B001DB139 /* kisspng-vida-financeira-gold-coin-computer-icons-gold-ornament-5aad0b262d4ee3.5002982415212900221856.png in Resources */ = {isa = PBXBuildFile; fileRef = 21817AE3287F566B001DB139 /* kisspng-vida-financeira-gold-coin-computer-icons-gold-ornament-5aad0b262d4ee3.5002982415212900221856.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		21817AD1287F52D8001DB139 /* gethercoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gethercoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21817AD5287F52D8001DB139 /* gethercoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gethercoinUITests.swift; sourceTree = "<group>"; };
 		21817AD7287F52D8001DB139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21817AE3287F566B001DB139 /* kisspng-vida-financeira-gold-coin-computer-icons-gold-ornament-5aad0b262d4ee3.5002982415212900221856.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kisspng-vida-financeira-gold-coin-computer-icons-gold-ornament-5aad0b262d4ee3.5002982415212900221856.png"; path = "../../../../../Downloads/kisspng-vida-financeira-gold-coin-computer-icons-gold-ornament-5aad0b262d4ee3.5002982415212900221856.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		21817AB2287F52D6001DB139 /* gethercoin */ = {
 			isa = PBXGroup;
 			children = (
+				21817AE3287F566B001DB139 /* kisspng-vida-financeira-gold-coin-computer-icons-gold-ornament-5aad0b262d4ee3.5002982415212900221856.png */,
 				21817AB3287F52D6001DB139 /* AppDelegate.swift */,
 				21817AB5287F52D6001DB139 /* SceneDelegate.swift */,
 				21817AB7287F52D6001DB139 /* ViewController.swift */,
@@ -233,6 +236,7 @@
 			files = (
 				21817AC0287F52D7001DB139 /* LaunchScreen.storyboard in Resources */,
 				21817ABD287F52D7001DB139 /* Assets.xcassets in Resources */,
+				21817AE4287F566B001DB139 /* kisspng-vida-financeira-gold-coin-computer-icons-gold-ornament-5aad0b262d4ee3.5002982415212900221856.png in Resources */,
 				21817ABB287F52D6001DB139 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
