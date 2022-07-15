@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var hidetimer = Timer()
   var increase = 0
     var counter = 0
+    var highscore = 0
     var coinarray = [UIImageView()]
     // views
     @IBOutlet weak var timelabel1: UILabel!
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        counter = 20
+        counter = 5
         increase = 0
         timelabel1.text = String(counter)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countdown), userInfo: nil, repeats: true)
@@ -95,6 +96,22 @@ class ViewController: UIViewController {
             for coin in coinarray{
                 coin.isHidden = true
             }
+            if self.increase > self.highscore {
+                self.highscore = self.increase
+                highscorelabel1.text = "highscore : \(self.highscore)"
+                UserDefaults.standard.set(self.highscore, forKey: "High score : ")
+            }
+            let alert = UIAlertController(title: "Time's Up Bitches", message: "bi daha oynacan mı yarrak?", preferredStyle: .alert)
+            
+            let okbutton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            let replaybutton = UIAlertAction("bir daha oyna", style: .default) { UI
+            
+            }
+            alert.addAction(okbutton)
+            self.present(alert, animated : true, completion: nil)
+            
+            
+            
         }
         print("timer")
     }
