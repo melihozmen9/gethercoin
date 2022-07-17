@@ -69,11 +69,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Highest Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2G-Fe-ZId">
-                                <rect key="frame" x="109" y="628" width="241" height="42"/>
+                                <rect key="frame" x="109" y="628" width="196" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="78" id="eh5-tK-ehb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" systemColor="systemOrangeColor"/>
                             </label>

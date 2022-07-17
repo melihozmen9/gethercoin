@@ -10,9 +10,10 @@ import UIKit
 class ViewController: UIViewController {
 
     //variables
+    
     var timer = Timer()
     var hidetimer = Timer()
-  var increase = 0
+    var increase = 0
     var counter = 0
     var highscore = 0
     var coinarray = [UIImageView()]
@@ -32,7 +33,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        counter = 5
+        let storedhighscore = UserDefaults.standard.object(forKey: "highscore")
+        
+        if storedhighscore == nil {
+            highscore = 0
+            highscorelabel1.text = "Highscore: \(highscore)"
+        }
+        if let newscore = storedhighscore as? Int {
+            highscore = newscore
+            highscorelabel1.text = "highscore: \(highscore)"
+        }
+        counter = 10
         increase = 0
         timelabel1.text = String(counter)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countdown), userInfo: nil, repeats: true)
@@ -104,10 +115,17 @@ class ViewController: UIViewController {
             let alert = UIAlertController(title: "Time's Up Bitches", message: "bi daha oynacan mı yarrak?", preferredStyle: .alert)
             
             let okbutton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            let replaybutton = UIAlertAction("bir daha oyna", style: .default) { UI
-            
+            let replaybutton = UIAlertAction(title : "bir daha oyna", style: .default) { (UIAlertAction) in
+                
+                self.increase = 0
+                self.score1.text = "Score : \(self.increase)"
+                self.counter = 10
+                self.timelabel1.text = String(self.counter)
+                self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.countdown), userInfo: nil, repeats: true)
+                self.hidetimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.hidecoin), userInfo: nil, repeats: true)
             }
             alert.addAction(okbutton)
+            alert.addAction(replaybutton)
             self.present(alert, animated : true, completion: nil)
             
             
